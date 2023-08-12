@@ -7,12 +7,6 @@ pipeline {
   }
   stages {
     stage('Fluffy Build') {
-      agent {
-        docker {
-          image 'centos'
-        }
-
-      }
       steps {
         sh 'echo Another Placeholder'
       }
