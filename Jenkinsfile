@@ -1,5 +1,7 @@
 pipeline {
-  agent any
+  agent {
+    docker 'busybox'
+  }
   stages {
     stage('Fluffy Build') {
       steps {
