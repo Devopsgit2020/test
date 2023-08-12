@@ -1,7 +1,5 @@
 pipeline {
-  agent {
-    docker 'centos'
-  }
+  agent none
   stages {
     stage('Fluffy Build') {
       steps {
