@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    docker 'busybox'
+    docker 'centos'
   }
   stages {
     stage('Fluffy Build') {
