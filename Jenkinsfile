@@ -1,5 +1,10 @@
 pipeline {
-  agent none
+  agent {
+    node {
+      label 'testcloud'
+    }
+
+  }
   stages {
     stage('Fluffy Build') {
       agent {
